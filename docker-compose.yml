@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: hp1
+    ports:
+      - "8025:80"
+    volumes:
+      - ./public:/usr/share/nginx/html
